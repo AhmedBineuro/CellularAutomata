@@ -3,10 +3,10 @@
 ---
 This is a very rough implementation of the cellular automata simulation the Game of life by John Horton Conway. There are plans for this implementation in the future.
 ---
-## Controls:
-0: to pause and unpause sim
-left click: to select or deselect cell
-c: to clear grid
+## Controls
+- *0* to pause and unpause sim
+- *left click* to select or deselect cell
+- *c* to clear grid
 ### Future plans
 - [ ] Slime Mold Simulation
 - [ ] Average Color Mode
