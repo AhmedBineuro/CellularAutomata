@@ -4,12 +4,12 @@ pygame.init()
 SCREEN_W = 1000
 SCREEN_H = 800
 STEP_TIME = 5
-GROW = 100
-GCOLUMN = 100
+GROW = 40
+GCOLUMN = 40
 
 tick = 60
 screen = pygame.display.set_mode((SCREEN_W, SCREEN_H))
-cellSize = 5
+cellSize = 10
 cellsInRow = int(SCREEN_W/cellSize)
 cellsInColumn = int(SCREEN_H/cellSize)
 clock = pygame.time.Clock()
@@ -141,7 +141,7 @@ while True:
             pos = pygame.mouse.get_pos()
             g.checkClick(pos[0], pos[1])
         if event.type == pygame.KEYDOWN:
-            if event.key == pygame.K_0:
+            if event.key == pygame.K_SPACE:
                 pause = not pause
             if event.key == pygame.K_c:
                 g.clear()
