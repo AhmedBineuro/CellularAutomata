@@ -4,12 +4,12 @@ pygame.init()
 SCREEN_W = 1000
 SCREEN_H = 800
 STEP_TIME = 5
-GROW = 40
-GCOLUMN = 40
+GROW = 100
+GCOLUMN = 100
 
 tick = 60
 screen = pygame.display.set_mode((SCREEN_W, SCREEN_H))
-cellSize = 10
+cellSize = 5
 cellsInRow = int(SCREEN_W/cellSize)
 cellsInColumn = int(SCREEN_H/cellSize)
 clock = pygame.time.Clock()
@@ -33,8 +33,12 @@ class cell:
         c = (255, 255, 255)
         if (self.occupied):
             c = (140, 120, 40)
-        pygame.draw.rect(screen, c, pygame.Rect(
-            self.x-self.cellSize/2, self.y-self.cellSize/2, self.cellSize, self.cellSize), 0, int(cellSize))
+        if pause:
+            pygame.draw.rect(screen, c, pygame.Rect(
+                self.x-self.cellSize/2, self.y-self.cellSize/2, self.cellSize, self.cellSize), 0, int(cellSize))
+        else:
+            pygame.draw.rect(screen, c, pygame.Rect(
+                self.x-self.cellSize/2, self.y-self.cellSize/2, self.cellSize, self.cellSize))
 
     def clickResolve(self, x, y):
         xCondition = (x >= (self.x-cellSize/2)) and (x <= (self.x+cellSize/2))
