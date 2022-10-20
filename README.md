@@ -7,5 +7,7 @@ This is a very rough implementation of the cellular automata simulation the Game
 - [ ] Average Color Mode
   - Meaning that the color of each cell will be an average of all of its neighbors
 - [ ] Using cell system for pixel physics system
+- [ ] Actual doctumentation
+- [ ] GUI
 ---
 *Run at your own concern*
