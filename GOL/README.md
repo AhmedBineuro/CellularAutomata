@@ -5,8 +5,8 @@ This is a very rough implementation of the cellular automata simulation the Game
 ---
 ## Controls
 - *0* to pause and unpause sim
-- *left click* to select or deselect cell
-- *c* to clear grid
+- *Space* to select or deselect cell
+- *C* to clear grid
 ### Future plans
 - [ ] Slime Mold Simulation
 - [ ] Average Color Mode
