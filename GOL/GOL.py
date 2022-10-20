@@ -143,7 +143,7 @@ while True:
         if event.type == pygame.KEYDOWN:
             if event.key == pygame.K_0:
                 pause = not pause
-            if event.key == pygame.K_a:
+            if event.key == pygame.K_c:
                 g.clear()
     if not pause:
         if stepTime == 0:
